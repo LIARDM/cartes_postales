@@ -12,9 +12,11 @@
     <body>
     <header>
         <?php
-        echo "Bonjour";
         $_sayMyName = "Meven";?>
-        <h1>Bonjour <?php $_sayMyName ?></h1>
+        <h1>Bonjour <?= $_sayMyName ?> !</h1>
+        <?php 
+        include('bdd_cp.inc.php');
+        ?>
     </header>
         
     </body>
