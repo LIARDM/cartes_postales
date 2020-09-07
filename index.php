@@ -6,6 +6,7 @@
         <meta name="keywords" content="Cartes postales, famillial, Collection">
         <meta name="author" content="LIARD Meven">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style_default.css">
         <title>Cartes Postales</title>
     </head>
 

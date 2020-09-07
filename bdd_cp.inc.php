@@ -21,17 +21,24 @@ try
 	$dbh = new PDO($dsn, $user, $pass, $options);
 	echo "<p>Connexion effectuée. </p></br>";
 	// Petit Test 1
-	$sql = "SELECT * FROM cartes";
+	$sql = "SELECT * FROM cartes WHERE pays IN ('Afrique du Sud','Canada','Emirat d\'Abou Dhabi')";
 	$reponse = $dbh->query($sql);
 
 	while($row = $reponse->fetch())
 	{
+		str_replace('/','\\',$row["recto-carte"]);
+		str_replace('/','\\',$row["verso-carte"]);
+
 		echo '<p>';
 		echo $row["numero"] . " - " . $row["pays"]. " - " . $row["dep-ville"]. " - " . $row["nom-carte"] . " - " . $row["date-envoi"]. " - " . $row["pays"]; 
 		echo '</br>';
 		echo $row["theme"] . " - " . $row["expediteur"];
 		echo '</br>';
 		echo $row["vue"];
+		echo '</br>';
+		echo '</br>';
+		echo '<img class="recto" src="./img'.$row["recto-carte"].'">';
+		echo '<img class="verso" src="./img'.$row["verso-carte"].'">';
 		echo '</p>';
 	}
 } 
