@@ -7,6 +7,10 @@
 <body>
 
 <?php
+require_once './php/bo/pays.php';
+require_once './php/bo/theme.php';
+require_once './php/bo/expediteur.php';
+
 // Définition des variables de connexion
 //$user = 'dbo423622064';
 //$pass = '5$ha-Y8T}o11n{E1';
@@ -41,6 +45,34 @@ try
 		echo '<img class="verso" src="./img'.$row["verso-carte"].'">';
 		echo '</p>';
 	}
+	// petit test 2
+	$pays = new Pays();
+	$listePays = $pays->getCountryList();
+	echo '<select>';
+	foreach($listePays as $row)
+	{
+		echo '<option>'.$row['pays'].'</option>';
+	}
+	echo '</select>';
+
+	$theme = new Theme();
+	$listeTheme = $theme->getThemeList();
+	echo '<select>';
+	foreach($listeTheme as $row)
+	{
+		echo '<option>'.$row['theme'].'</option>';
+	}
+	echo '</select>';
+
+	$expediteur = new Expediteur();
+	$listeExpediteur = $expediteur->getSenderList();
+	echo '<select>';
+	foreach($listeExpediteur as $row)
+	{
+		echo '<option>'.$row['expediteur'].'</option>';
+	}
+	echo '</select>';
+
 } 
 catch(PDOExeption $e) 
 {
