@@ -1,5 +1,5 @@
 <?php 
-require_once './php/dao/rqt_theme.php';
+require_once './php/model/rqt_theme.php';
 
 /**
  * Classe "objet-métier" thème.

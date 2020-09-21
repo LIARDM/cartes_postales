@@ -1,5 +1,5 @@
 <?php 
-require_once './php/dao/rqt_expediteur.php';
+require_once './php/model/rqt_expediteur.php';
 
 /**
  * Classe "objet-métier" Expediteur.

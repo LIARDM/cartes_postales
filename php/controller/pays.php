@@ -1,5 +1,5 @@
 <?php 
-require_once './php/dao/rqt_pays.php';
+require_once './php/model/rqt_pays.php';
 
 /**
  * Classe "objet-métier" Pays.

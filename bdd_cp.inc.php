@@ -7,9 +7,9 @@
 <body>
 
 <?php
-require_once './php/bo/pays.php';
-require_once './php/bo/theme.php';
-require_once './php/bo/expediteur.php';
+require_once './php/controller/pays.php';
+require_once './php/controller/theme.php';
+require_once './php/controller/expediteur.php';
 
 // Définition des variables de connexion
 //$user = 'dbo423622064';
