@@ -24,6 +24,4 @@ class Pays
        return self::$countryList;
    }
 }
-
-
 ?>
