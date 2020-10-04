@@ -12,9 +12,7 @@
 
     <body>
     <header>
-        <?php
-        $_sayMyName = "Meven";?>
-        <h1>Bonjour <?= $_sayMyName ?> !</h1>
+        <h1 id='titre'>Bienvenue sur ma Collection de Cartes Postales</h1>
         <?php 
         include('bdd_cp.inc.php');
         ?>
