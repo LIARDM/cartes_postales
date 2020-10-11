@@ -1,3 +1,8 @@
+*
+{
+    color: wheat;    
+}
+
 #fond
 {
     background-color: #02467b;
@@ -32,7 +37,8 @@ h1
 
 #titre
 {
-    color: white;    
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 #index_img-1
@@ -42,6 +48,37 @@ h1
     margin-right: auto;
     background-position: center;
     width: 75%;
+    margin-bottom: 5%;
+}
+
+#section
+{
+    display: flex;
+    justify-content: center;
+}
+
+#bloc_phare
+{
+    background-image:linear-gradient(rgba(2, 70, 123, 1), rgba(0, 212, 255, 1));
+    padding: 25px 25px 25px 25px;
+    margin: 5px;
+    border-style: solid;
+    border-color: red;
+    border-width: 3px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow:5px 5px 5px rgba(2, 70, 123, 1);
+}
+
+#bloc_presentation
+{
+    background-image:linear-gradient(rgba(2, 70, 123, 1), rgba(0, 212, 255, 1));
+    padding: 25px 25px 25px 25px;
+    margin: 5px;
+    border-style: solid;
+    border-color: forestgreen;
+    border-width: 3px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow:5px 5px 5px rgba(2, 70, 123, 1);
 }
 
 .recto, .verso
