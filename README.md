@@ -1,7 +1,9 @@
 # cartes_postales
 
 # 2020-10-12
-- Mise en forme + Polices de caractère
+- Mise en forme + Polices de caractère.
+- Modularisation de la "page principale".
+- Base de navigation.
 
 # 2020-09-12
 - Passage au modèle MVC

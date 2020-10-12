@@ -13,42 +13,19 @@
 
     <body id='fond'>
         <div id='container'>
-            <nav class="navbar navbar-expend-lg navbar-light">
-                <a class="btn btn-ligh" href="#" role="button">Accueil</a>
-                <a class="btn btn-ligh" href="#" role="button">Par Pays</a>
-                <a class="btn btn-ligh" href="#" role="button">Par Expediteur</a>
-                <a class="btn btn-ligh" href="#" role="button">Par Thème</a>
-                <a class="btn btn-ligh" href="#" role="button">Contact</a>
-            </nav>
-
-            <header>
-                <h1 id='titre'>Bienvenue sur ma Collection de Cartes Postales</h1>
-                <img id="index_img-1" src="/img/index_img-1.png"></img>
-                <?php 
-
-                // include('bdd_cp.inc.php');
-                ?>
-            </header>
-
-            <section id="section">
-                <aside id="bloc_phare">
-                    <?php
-                        setlocale(LC_ALL, 'fr_FR');
-                        
-                        echo "<p>Nous sommes le : " . strftime("%d %B %Y")."</p>";                        ;
-                    
-                    ?>
-                    <img src="/img/les-pierres-noires_1_lmresized_1.jpg"></img>
-                </aside>
-                <article id="bloc_presentation">
-                    <h4>Présentation</h4>
-                    <hr>
-                    <p>Bonjour à vous qui arrivez sur ce site de ma collection de cartes postales.<p>
-                    <p>J'ai voulu que chacun puisse voir et lire les cartes que j'ai reçu, et celles que Maman avait gardée.</p>
-                    <p>Qu'ils en soient ici chaleureusement remerciés.</p>
-                    <p>J'espère que vous continuerez à faire partager ainsi vos émotions de voyages.</p>
-                </article>
-            </section>
+            <?php 
+                include_once 'php/vue/navbar.php';
+                include_once 'php/vue/header.php';
+            
+                if(isset($_SESSION["navigation"]))
+                {
+                    echo $_SESSION["navigation"];
+                }
+                else
+                {
+                    include_once 'php/vue/accueil.php';
+                }
+            ?>
         </div>
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
