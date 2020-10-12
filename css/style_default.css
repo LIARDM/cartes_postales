@@ -1,7 +1,13 @@
 *
 {
-    color: wheat;    
+    color: wheat;  
+    font-family: baskerville;  
 }
+
+@font-face {
+    font-family: baskerville;
+    src: url(/js/fonts/baskervilleoldface.ttf);
+  }
 
 #fond
 {
@@ -17,7 +23,9 @@ nav
 
 nav>a
 {
-    color: white;
+    color: white;    
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #container
@@ -49,6 +57,8 @@ h1
     background-position: center;
     width: 75%;
     margin-bottom: 5%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow:5px 5px 5px rgba(0, 70, 123, 1);
 }
 
 #section
@@ -63,7 +73,7 @@ h1
     padding: 25px 25px 25px 25px;
     margin: 5px;
     border-style: solid;
-    border-color: red;
+    border-color: rgba(2, 70, 123, 1);
     border-width: 3px;
     border-radius: 15px 15px 15px 15px;
     box-shadow:5px 5px 5px rgba(2, 70, 123, 1);
@@ -75,10 +85,15 @@ h1
     padding: 25px 25px 25px 25px;
     margin: 5px;
     border-style: solid;
-    border-color: forestgreen;
+    border-color: rgba(2, 70, 123, 1);
     border-width: 3px;
     border-radius: 15px 15px 15px 15px;
-    box-shadow:5px 5px 5px rgba(2, 70, 123, 1);
+    box-shadow:5px 5px 5px rgba(0, 70, 123, 1);
+}
+
+#bloc_presentation>p
+{
+    font-size: 1em;
 }
 
 .recto, .verso

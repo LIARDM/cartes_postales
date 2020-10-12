@@ -14,11 +14,11 @@
     <body id='fond'>
         <div id='container'>
             <nav class="navbar navbar-expend-lg navbar-light">
-                <a class=navbar-nav href="#">Accueil</a>
-                <a class=navbar-nav href="#">Par Pays</a>
-                <a class=navbar-nav href="#">Par Expediteur</a>
-                <a class=navbar-nav href="#">Par Thème</a>
-                <a class=navbar-nav href="#">Contact</a>
+                <a class="btn btn-ligh" href="#" role="button">Accueil</a>
+                <a class="btn btn-ligh" href="#" role="button">Par Pays</a>
+                <a class="btn btn-ligh" href="#" role="button">Par Expediteur</a>
+                <a class="btn btn-ligh" href="#" role="button">Par Thème</a>
+                <a class="btn btn-ligh" href="#" role="button">Contact</a>
             </nav>
 
             <header>
@@ -42,10 +42,11 @@
                 </aside>
                 <article id="bloc_presentation">
                     <h4>Présentation</h4>
-                    <p>Bonjour à vous qui arrivez sur ce site de ma collection de cartes postales.<br>
-                        J'ai voulu que chacun puisse voir et lire les cartes que j'ai reçu , et celles que Maman avait gardée.<br>
-                        Qu'ils en soient ici chaleureusement remerciés.<br>
-                        J'espère que vous continuerez à faire partager ainsi vos émotions de voyages.</p>
+                    <hr>
+                    <p>Bonjour à vous qui arrivez sur ce site de ma collection de cartes postales.<p>
+                    <p>J'ai voulu que chacun puisse voir et lire les cartes que j'ai reçu, et celles que Maman avait gardée.</p>
+                    <p>Qu'ils en soient ici chaleureusement remerciés.</p>
+                    <p>J'espère que vous continuerez à faire partager ainsi vos émotions de voyages.</p>
                 </article>
             </section>
         </div>
